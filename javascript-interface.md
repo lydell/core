@@ -95,7 +95,7 @@ For `myOutgoingPort : String -> Cmd msg`, use `app.ports.myOutgoingPort.subscrib
 
 For `myIncomingPort : (String -> msg) -> Sub msg`, use `app.ports.myIncomingPort.send("hello")`.
 
-If you don’t use any ports in your program, `app.ports` does not exist. (It’s _not_ an empty object!) If `app.ports` is unexpectedly missing, double check that your port actually ends up being used – all the way from where you call it, until it’s return value reaches `main`.
+If you don’t use any ports in your program, `app.ports` does not exist. (It’s _not_ an empty object!) If `app.ports` is unexpectedly missing, double check that your port actually ends up being used – all the way from where you call it, until its return value reaches `main`.
 
 ## `app.stop()`
 
