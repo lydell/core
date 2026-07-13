@@ -81,6 +81,6 @@ var _List_sortWith = F2(function(f, xs)
 {
 	return _List_fromArray(_List_toArray(xs).sort(function(a, b) {
 		var ord = A2(f, a, b);
-		return ord === __Basics_EQ ? 0 : ord === __Basics_LT ? -1 : 1;
+		return ord.$ === __Basics_EQ.$ ? 0 : ord.$ === __Basics_LT.$ ? -1 : 1;
 	}));
 });
